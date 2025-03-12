@@ -10,6 +10,23 @@ Run the following command:
 npx create-turbo@latest
 ```
 
+## Note
+
+```sh
+bunx create-turbo@latest
+```
+
+To get started:
+
+- Change to the directory: cd turbo-web-starter
+- Enable Remote Caching (recommended): bunx turbo login
+  - Learn more: <https://turbo.build/repo/remote-cache>
+- Run commands with Turborepo:
+  - bun run build: Build all apps and packages
+  - bun run dev: Develop all apps and packages
+  - bun run lint: Lint all apps and packages
+- Run a command twice to hit cache
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
