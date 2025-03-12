@@ -27,6 +27,23 @@ To get started:
   - bun run lint: Lint all apps and packages
 - Run a command twice to hit cache
 
+[husky](https://typicode.github.io/husky/)
+
+```sh
+bun add --dev husky
+bunx husky init
+rm .husky/pre-commit
+```
+
+[commitlint](https://commitlint.js.org/)
+
+```sh
+bun add --dev @commitlint/{config-conventional,cli}
+echo "export default { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
+npm pkg set scripts.commitlint="commitlint --edit"
+echo "bun commitlint \${1}" > .husky/commit-msg
+```
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
