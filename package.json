@@ -13,6 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
+    "@repo/prettier-config": "*",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "turbo": "^2.4.4",
