@@ -5,7 +5,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{js,mjs,ts,tsx,json,css,md}\"",
     "check-types": "turbo run check-types",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
@@ -15,6 +15,7 @@
     "@commitlint/config-conventional": "^19.8.0",
     "@repo/prettier-config": "*",
     "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "turbo": "^2.4.4",
     "typescript": "5.8.2"

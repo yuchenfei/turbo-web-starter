@@ -44,6 +44,13 @@ npm pkg set scripts.commitlint="commitlint --edit"
 echo "bun commitlint \${1}" > .husky/commit-msg
 ```
 
+[lint-staged](https://github.com/lint-staged/lint-staged)
+
+```sh
+bun add --dev lint-staged
+echo "bun lint-staged" > .husky/pre-commit
+```
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
