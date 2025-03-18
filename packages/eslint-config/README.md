@@ -17,6 +17,9 @@ bunx @eslint/config-inspector@latest
 - [eslint-config-flat-gitignore](https://github.com/antfu/eslint-config-flat-gitignore) - .gitignore support for ESLint Flat Config.
 - [eslint/js](https://github.com/eslint/eslint/tree/main/packages/js) - ESLint JavaScript Plugin.
 - [typescript-eslint](https://typescript-eslint.io/) - The tooling that enables ESLint and Prettier to support TypeScript.
+- import
+  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import) - ESLint plugin with rules that help validate proper imports.
+  - [x] [eslint-plugin-import-x](https://github.com/un-ts/eslint-plugin-import-x) - a fork of `eslint-plugin-import` that aims to provide a more performant and more lightweight version of the original plugin.
 - [eslint-plugin-turbo](https://github.com/vercel/turborepo/tree/main/packages/eslint-plugin-turbo) - Easy ESLint configuration for Turborepo.
 - React
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) - React specific linting rules for ESLint.

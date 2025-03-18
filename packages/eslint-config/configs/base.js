@@ -1,5 +1,6 @@
 import js from '@eslint/js'
 import gitignore from 'eslint-config-flat-gitignore'
+import eslintPluginImportX from 'eslint-plugin-import-x'
 import turboPlugin from 'eslint-plugin-turbo'
 import tseslint from 'typescript-eslint'
 
@@ -11,6 +12,7 @@ export default [
     ...js.configs.recommended,
   },
   ...tseslint.configs.recommended,
+  eslintPluginImportX.flatConfigs.recommended,
   {
     name: 'config-turbo',
     plugins: {
