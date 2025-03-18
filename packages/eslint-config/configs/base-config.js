@@ -3,10 +3,7 @@ import gitignore from 'eslint-config-flat-gitignore'
 import turboPlugin from 'eslint-plugin-turbo'
 import tseslint from 'typescript-eslint'
 
-/**
- * A shared ESLint configuration for the repository.
- *
- * @type {import("eslint").Linter.Config[]} */
+/** @type {import("eslint").Linter.Config[]} */
 export default [
   gitignore(),
   {

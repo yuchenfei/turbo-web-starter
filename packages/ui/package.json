@@ -8,8 +8,13 @@
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
+    "lint:inspect": "bunx @eslint/config-inspector@latest",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
@@ -20,9 +25,5 @@
     "@types/react-dom": "19.0.4",
     "eslint": "^9.22.0",
     "typescript": "5.8.2"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
   }
 }

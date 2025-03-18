@@ -23,3 +23,7 @@ bunx @eslint/config-inspector@latest
   - [ ] [ESLint React](https://github.com/Rel1cx/eslint-react) - A set of composable linting rules for libraries and frameworks that use React as a UI runtime.
   - [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) - This ESLint plugin enforces the Rules of Hooks.
   - [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) - Validate that your components can safely be updated with Fast Refresh.
+- Next.js
+  - [eslint-config-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next)
+  - [eslint-plugin-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next)
+  - [What's the differernces from next/core-web-vitals and eslint-config-next and eslint-plugin-next?](https://github.com/vercel/next.js/discussions/58714#discussioncomment-8324062)
