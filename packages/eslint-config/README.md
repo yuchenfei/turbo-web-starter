@@ -24,6 +24,7 @@ bunx @eslint/config-inspector@latest
 - React
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) - React specific linting rules for ESLint.
   - [ ] [ESLint React](https://github.com/Rel1cx/eslint-react) - A set of composable linting rules for libraries and frameworks that use React as a UI runtime.
+  - [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) - Static AST checker for a11y rules on JSX elements.
   - [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) - This ESLint plugin enforces the Rules of Hooks.
   - [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) - Validate that your components can safely be updated with Fast Refresh.
 - Next.js
