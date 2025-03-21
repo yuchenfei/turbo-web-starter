@@ -1,10 +1,13 @@
-import reactPlugin from 'eslint-plugin-react'
-import reactHooks from 'eslint-plugin-react-hooks'
-import globals from 'globals'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
+import reactPlugin from 'eslint-plugin-react'
+// eslint-disable-next-line import-x/default
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import globals from 'globals'
+import { isPackageInDependencies } from '../utils.js'
 
 /** @type {import("eslint").Linter.Config[]} */
-export default [
+export const react = [
   {
     name: 'eslint-plugin-react/recommended',
     ...reactPlugin.configs.flat.recommended,
@@ -23,4 +26,5 @@ export default [
   },
   jsxA11y.flatConfigs.recommended,
   reactHooks.configs['recommended-latest'],
+  isPackageInDependencies('vite') ? reactRefresh.configs.vite : {},
 ]

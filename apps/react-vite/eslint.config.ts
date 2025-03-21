@@ -1,13 +1,14 @@
 import {
+  importsVite,
   gitignore,
   imports,
   javascript,
   prettier,
   react,
-  next,
   turbo,
   typescript,
 } from '@repo/eslint-config'
+import viteConfig from './vite.config.ts'
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
@@ -16,7 +17,7 @@ export default [
   ...typescript,
   ...imports,
   ...turbo,
+  ...importsVite(viteConfig),
   ...react,
-  ...next,
   ...prettier,
 ]
