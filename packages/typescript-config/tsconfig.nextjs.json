@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+
+    // Bundler mode
+    "incremental": true,
+
+    // Editor Support
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  }
+}

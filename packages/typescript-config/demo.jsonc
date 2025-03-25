@@ -1,0 +1,148 @@
+// https://www.typescriptlang.org/tsconfig/
+// https://github.com/tsconfig/bases
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // >>>>>>>>>> Type Checking <<<<<<<<<<
+    "strict": true, // Enable all strict mode family options
+    // "alwaysStrict": false,
+    // "noImplicitAny": false,
+    // "noImplicitThis": false,
+    // "strictBindCallApply": false,
+    // "strictBuiltinIteratorReturn": false,
+    // "strictFunctionTypes": false, // only applies to functions written in function syntax, not to those in method syntax
+    // "strictNullChecks": false,
+    // "strictPropertyInitialization": false,
+    // "useUnknownInCatchVariables": false,
+    "exactOptionalPropertyTypes": true, // Recommended
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true, // affects arrays handling
+    // Default warning, enable produce error
+    // "allowUnreachableCode": false, // default: undefined, true to ignore
+    // "allowUnusedLabels": false, // default: undefined, true to ignore
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+
+    // >>>>>>>>>> Modules <<<<<<<<<<
+    // "allowArbitraryExtensions": true, // import non-ts artifacts
+    // "allowImportingTsExtensions": true, // only allowed when --noEmit or --emitDeclarationOnly is enabled
+    // "allowUmdGlobalAccess": true
+    // "baseUr": "./", // not required when using paths
+    // "customConditions": ["my-condition"],
+    // https://www.typescriptlang.org/tsconfig/#module
+    "module": "nodeNext", // "nodenext" for modern Node.js projects and preserve or esnext for code that will be bundled.
+    "moduleResolution": "nodenext",
+    // "moduleSuffixes": [".ios", ".native", ""], // This feature can be useful for React Native projects where each target platform can use a separate tsconfig.json with differing moduleSuffixes.
+    // "noResolve": true,
+    "noUncheckedSideEffectImports": true, // TypeScript will error if it can’t find a source file for a side effect import. Write ambient module declaration (global.d.ts, vite-env.d.ts)
+    "path": {
+      "foo": ["src/foo"],
+      "bar/*": ["src/bar/*"],
+    }, // Note that this feature does not change how import paths are emitted by tsc, so paths should only be used to inform TypeScript that another tool has this mapping and will use it at runtime or when bundling.
+    "resolveJsonModule": true, // a common practice in node projects.
+    // "resolvePackageJsonExports": true, // default: true under the node16, nodenext, and bundler options for --moduleResolution.
+    // "resolvePackageJsonImports": true, // same
+    // "rewriteRelativeImportExtensions": true,
+    "rootDir": ".", // Default: The longest common path of all non-declaration input files. does not affect which files become part of the compilation (include, exclude, or files).
+    // "rootDirs": ["src/views", "generated/templates/views"], // inform the compiler that there are many “virtual” directories acting as a single root. This does not affect how TypeScript emits JavaScript
+    // "typeRoots": ["./typings", "./vendor/types"], // If typeRoots is specified, only packages under typeRoots will be included.
+    // "types": ["node", "jest", "express"], // If types is specified, only packages listed will be included in the global scope.
+
+    // >>>>>>>>>> Emit <<<<<<<<<<
+    // "declaration": true, // generate .d.ts files. default true if composite.
+    // "declarationDir": "./types",
+    // "declarationMap": true, // Generates a source map for .d.ts files which map back to the original .ts source file.
+    // "downlevelIteration": true,
+    // "emitBOM": true,
+    // "emitDeclarationOnly": true, // only emit .d.ts files
+    // "importHelpers": true, // import tslib helpers
+    // "inlineSourceMap": true, // e.g. debug JS files on a webserver that doesn’t allow .map files to be served.
+    // "inlineSources": true, // include the original source code in the source map.
+    // "mapRoot": "https://my-website.com/debug/sourcemaps/", // Specify the location where debugger should locate map files.
+    "newLine": "lf", // "lf" | "crlf"
+    "noEmit": true, // Do not emit output
+    // "noEmitHelpers": true,
+    // "noEmitOnError": true, // default: false
+    "outDir": "dist",
+    // "outFile": "", // cannot be used unless module is None, System, or AMD.
+    // "preserveConstEnums": true, // default true if isolatedModules
+    // "removeComments": true, // default false
+    "sourceMap": true,
+    "sourceRoot": "https://my-website.com/debug/source/", // Specify the location where debugger should locate TypeScript files instead of source locations.
+    // "stripInternal": true, // Do not emit **declarations** for code that has an @internal annotation in its JSDoc comment.
+
+    // >>>>>>>>>> JavaScript <<<<<<<<<<
+    "allowJs": true, // It can also be used along-side declaration and emitDeclarationOnly to create declarations for JS files.
+    "checkJs": true, // This is the equivalent of including // @ts-check at the top of all JavaScript files which are included in your project.
+    // "maxNodeModuleJsDepth": 0, // only be used when allowJs is enabled, and want to have TypeScript infer types for all of the JavaScript inside your node_modules.
+
+    // >>>>>>>>>> Editor Support <<<<<<<<<<
+    // "disableSizeLimit": true,
+    "plugins": [],
+
+    // >>>>>>>>>> Interop Constraints <<<<<<<<<<
+    "allowSyntheticDefaultImports": true, // not affect emit, only type checking
+    "erasableSyntaxOnly": true, // limit typescript-specific syntax
+    "esModuleInterop": true, // default true if module is is node16, nodenext, or preserve. Enabling esModuleInterop will also enable allowSyntheticDefaultImports.
+    "forceConsistentCasingInFileNames": true, // Recommended
+    // "isolatedDeclarations": true, // declaration or composite flags are also set.
+    "isolatedModules": true, // default true if verbatimModuleSyntax
+    // "perserveSymlinks": true,
+    "verbatimModuleSyntax": true,
+
+    // >>>>>>>>>> Backwards Compatibility <<<<<<<<<<
+    // "noImplicitUseStrict": true // You shouldn’t need this.
+    // "noStrictGenericChecks": true,
+    // "suppressExcessPropertyErrors": true, // not recommended
+    // "suppressImplicitAnyIndexErrors": true, // not recommended
+
+    // >>>>>>>>>> Language and Environment <<<<<<<<<<
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx", // preserve react react-native react-jsx react-jsxdev
+    // "jsxFactory": "React.createElement",
+    // "jsxFragmentFactory": "React.Fragment",
+    // "jsxImportSource": "react",
+    "lib": [], // https://github.com/microsoft/TypeScript/tree/main/src/lib
+    // "libReplacement": false, // default true. in the future, false may become the default.
+    "moduleDetection": "auto", // auto | legacy | force
+    // "noLib": true, // If this option is set, lib is ignored.
+    // "reactNamespace": "React", // Use jsxFactory instead.
+    "target": "ES6", // default: ES5. Modern browsers ES6 is a good choice. Reference tsconfig/bases. ESNext not recommended.
+    "useDefineForClassFields": true, // default true if target >= ES2022
+
+    // >>>>>>>>>> Compiler Diagnostics <<<<<<<<<<
+    "explainFiles": true,
+    "extendedDiagnostics": true, // show spend time when compiling
+    "generateCpuProfile": "profile.cpuprofile",
+    "generateTrace": true,
+    "listEmittedFiles": true,
+    "listFiles": true, // if using TypeScript 4.2, prefer explainFiles which offers an explanation of why a file was added too.
+    "noCheck": true,
+    "traceResolution": true, // debug why a module isn’t being included.
+
+    // >>>>>>>>>> Projects <<<<<<<<<<
+    "composite": true,
+    "disableReferencedProjectLoad": true, // for large projects
+    "disableSolutionSearching": true, // work with composite, disable find all references and jump to definition
+    // "disableSourceOfProjectReferenceRedirect": true, // work with composite, provides a way to go back to the pre-3.7 behavior where d.ts files were used to as the boundaries between modules.
+    "incremental": true, // default true if composite. This creates a series of .tsbuildinfo files in the same folder as your compilation output.
+    "tsBuildInfoFile": ".tsbuildinfo",
+
+    // >>>>>>>>>> Output Formatting <<<<<<<<<<
+    "noErrorTruncation": true,
+    "preserveWatchOutput": true, // keep outdated console output in watch mode
+    "pretty": true, // default true
+
+    // >>>>>>>>>> Completeness <<<<<<<<<<
+    "skipLibCheck": true, // recommended, save time during compilation
+
+    // >>>>>>>>>> Command Line <<<<<<<<<<
+
+    // >>>>>>>>>> Watch Options <<<<<<<<<<
+    "assumeChangesOnlyAffectDirectDependencies": true,
+  },
+}
