@@ -9,8 +9,8 @@
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "lint:inspect": "bunx @eslint/config-inspector@latest",
-    "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "generate:component": "turbo gen react-component"
   },
   "dependencies": {
     "react": "^19.1.0",
