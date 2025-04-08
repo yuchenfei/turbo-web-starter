@@ -1,4 +1,4 @@
-import eslintPluginImportX from 'eslint-plugin-import-x'
+import { flatConfigs as pluginImportX } from 'eslint-plugin-import-x'
 
 /**
  * @see https://github.com/un-ts/eslint-plugin-import-x
@@ -7,10 +7,7 @@ import eslintPluginImportX from 'eslint-plugin-import-x'
  * @see https://github.com/pzmosquito/eslint-import-resolver-vite
  *
  * @type {import("eslint").Linter.Config[]} */
-export const imports = [
-  eslintPluginImportX.flatConfigs.recommended,
-  eslintPluginImportX.flatConfigs.typescript,
-]
+export const imports = [pluginImportX.recommended, pluginImportX.typescript]
 
 export const importsVite = (viteConfig) => [
   {
