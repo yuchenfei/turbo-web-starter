@@ -3,6 +3,7 @@ import {
   imports,
   javascript,
   next,
+  perfectionist,
   prettier,
   react,
   turbo,
@@ -22,7 +23,7 @@ if (isPackageInDependencies('next')) {
   configs.push(...next)
 }
 
-configs.push(...prettier)
+configs.push(...perfectionist, ...prettier)
 
 export * from './configs/index.js'
 

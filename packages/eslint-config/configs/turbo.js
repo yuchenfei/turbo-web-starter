@@ -1,5 +1,6 @@
 import pluginTurbo from 'eslint-plugin-turbo'
 
+/** @type {import("eslint").Linter.Config[]} */
 export const turbo = [
   {
     name: 'turbo',
