@@ -24,10 +24,10 @@
     "@tanstack/react-router-devtools": "^1.115.2",
     "@tanstack/router-plugin": "^1.115.2",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.8.1",
     "eslint": "^9.24.0",
-    "typescript": "~5.7.3",
-    "vite": "^6.2.5"
+    "typescript": "~5.8.3",
+    "vite": "^6.2.6"
   }
 }
