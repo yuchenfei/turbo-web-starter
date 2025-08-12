@@ -12,22 +12,22 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@tanstack/react-router": "^1.120.13",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.8"
+    "@tanstack/react-router": "^1.131.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@tailwindcss/vite": "^4.1.8",
-    "@tanstack/react-router-devtools": "^1.120.13",
-    "@tanstack/router-plugin": "^1.120.13",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/react-router-devtools": "^1.131.5",
+    "@tanstack/router-plugin": "^1.131.5",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react-swc": "^3.10.0",
-    "eslint": "^9.28.0",
-    "typescript": "~5.8.3",
+    "eslint": "^9.33.0",
+    "typescript": "~5.9.2",
     "vite": "^6.3.5"
   }
 }
